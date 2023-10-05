@@ -36,7 +36,10 @@
     </div>
     <input class="btn btn-primary mb-3" type="button" value="Check the guess" onclick="checkAuthor()">
 </form>
-<p id="result">The text will be displayed here </p>
+<div>
+  <h5 class="display-5" style="background-color:rgb(199, 192, 184); border: solid 3px rgb(18, 128, 138);">Displaying incorrect guesses</h5>
+  <p id="out">This text will be replaced </p>
+</div>
 <script> 
 let good=0
 let oops=0
@@ -58,7 +61,7 @@ function checkAuthor (){
     {
       const checkButton = document.getElementById("checkButton");
       checkButton.disabled = true;
-      alert("Sorry, ran out of guesses");
+      alert("Sorry, ran out of guesses")
     }
     out.innerHTML="good count "+good+" oops count "+oops
     out.style.color="#0000FF"
