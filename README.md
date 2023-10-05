@@ -2,3 +2,8 @@
 # WebApps-F23-Assignment-6
 Introduction to Java Script and DOM
 
+Hosted at [author link]( https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-Prameela2511/author.html)
+
+Hosted at [Tips link]( https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-Prameela2511/tips.html)
+
+Hosted at [Cruise link]( https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-Prameela2511/cruise.html)
