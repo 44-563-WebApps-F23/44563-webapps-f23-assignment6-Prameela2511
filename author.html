@@ -14,7 +14,6 @@
 <body>
 
 <h1>Author entry Prameela</h1>
-<h2>Getting input</h2>
  
 <form>
     <div class="mb-3">
@@ -44,15 +43,11 @@ function checkAuthor(){
 
         good=good+1
         alert("You got it right")
-
     }
-
     else{
-
         oops=oops+1
         alert("Sorry")
     }
-
     if(oops==7)
     {
       const checkButton = document.getElementById("checkButton");
@@ -65,27 +60,27 @@ function checkAuthor(){
 
 </script>
 <hr>
-<h6 class ="display-6" style="background-color:yellow; border: solid 3px rgb(220, 97, 22);">Cities</h6>
+<h6 class ="display-6" style="background-color:rgb(91, 91, 211); border: solid 3px rgb(190, 181, 175);">Favorite Cities</h6>
 <div class="image-container" >
-    <img src="indiana.jpg" alt="indiana" height="100" weight="100" id="image" onclick="selectImage()">
+    <img src="pondicherry.jpg" alt="indiana" height="100" weight="100" id="image" onclick="selectImage()">
 <script>
     let useimage = 1;
     function selectImage(){
         switch(useimage){
             case 1:
-            document.getElementById("image").src="indiana.jpg";
+            document.getElementById("image").src="pondicherry.jpg";
             useimage+=1;
             break;
             case 2:
-            document.getElementById("image").src="Urbana.jpg";
+            document.getElementById("image").src="rhode.jpg";
             useimage+=1;
             break;
             case 3:
-            document.getElementById("image").src="Utica.jpg";
+            document.getElementById("image").src="Uttar Pradesh.png";
             useimage+=1;
             break;
             default:
-            document.getElementById("image").src="indiana.jpg";
+            document.getElementById("image").src="pondicherry.jpg";
         }
     }
 </script>
