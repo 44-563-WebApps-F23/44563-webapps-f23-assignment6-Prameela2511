@@ -36,7 +36,7 @@
     </div>
     <input class="btn btn-primary mb-3" type="button" value="Check the guess" onclick="checkAuthor()">
 </form>
-
+<p id="result">The text will be displayed here </p>
 <script> 
 let good=0
 let oops=0
@@ -60,7 +60,7 @@ function checkAuthor (){
       checkButton.disabled = true;
       alert("Sorry, ran out of guesses")
     }
-    out.innerHTML="good count"+good+"oops count"+oops
+    out.innerHTML="good count "+good+" oops count "+oops
     out.style.color="#0000FF"
 }
 </script>
