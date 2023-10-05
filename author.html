@@ -36,11 +36,11 @@
     </div>
     <input class="btn btn-primary mb-3" type="button" value="Check the guess" onclick="checkAuthor()">
 </form>
-    <p id="out">This text will be replaced</p>
 
 <script> 
 let good=0
 let oops=0
+
 function checkAuthor (){
     console.log("Getting form values")
     string1 = document.getElementById("form1_age").value
@@ -52,11 +52,19 @@ function checkAuthor (){
         good=good+1
         alert("You got it right")
     } else {
-        oops=oops+1
+      oops++;
+            document.getElementById("incorrect-guesses").innerHTML += `<div>Incorrect Guess #${oops}: ${form1_age}</div>`;
+            if (oops >= 7) {
+                document.querySelector("button").onclick = function() {
+                    alert("Sorry, ran out of guesses.");
+                };
+              }
+            else {
         alert("Sorry")
+            }
     }
     out.innerHTML="good count"+good+"oops count"+oops
-    out.style.color="#ff0000"
+    out.style.color="#0000FF"
 }
 </script>
 <hr>
